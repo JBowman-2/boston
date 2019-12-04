@@ -111,12 +111,11 @@ picture div {
 
 /* cards */
 
-div.cards {
 
-}
 
 div.cards div:nth-child(1) {
     background-image: url("../images/card1.jpg");
+  
 }
 
 div.cards div:nth-child(2) {
@@ -124,6 +123,7 @@ div.cards div:nth-child(2) {
 }
 div.cards div:nth-child(3) {
     background-image: url("../images/card3.jpg");
+    
 }
 div.cards div:nth-child(4) {
     background-image: url("../images/card4.jpg");
@@ -165,7 +165,6 @@ div.cards div a:hover {
 }
 
 div.cards div a img {
-   
    padding: 20% 30% 0 30%;
 }
 
@@ -177,10 +176,6 @@ div.cards div a h3 {
 }
 
 
-
-div.cards div {
-    margin: 10px 0;
-}
 
 
 
