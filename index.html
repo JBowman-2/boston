@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Restaurant</title>
+    <title>Boston</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
     <link href="css/styles.css" rel="stylesheet">
 
 </head>
 <body>
     
     <header class="clearfix">
-        <figure class="logo">
-            <img src="images/logoD.png" alt="logo" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
-        </figure>
-            <h1>Julien's  </h1>
-            <h2>Elegant Eats</h2>
+            <h1>Boston City</h1>
+            <h2>Where History Comes Alive</h2>
     </header>
     
    
-    
     <nav class="clearfix">
-        <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Locations</a></li>
-            <li class="active"><a href="index.html" class ="active">Our Story</a></li>
-            <li><a href="#">Contact</a></li>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="priNav" class="hide">
+                        <li><a href="#">Departments</a></li>
+                        <li class="active"><a href="index.html" class ="active">Visit</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Pay Bills</a></li>
+                        <li><a href="#">Meetings</a></li>
+                        <li><a href="#">Help</a></li>
         </ul>
     </nav>
    
@@ -51,6 +50,12 @@
     <footer>
             &copy; 2019 Josh Bowman • Login
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("priNav").classList.toggle("hide");
+        }
+    </script>
     
     
 </body>

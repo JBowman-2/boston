@@ -14,19 +14,18 @@ body {
 /* header */
 
 header {
-    background-color: $subColor;
+    background-image: url(../images/header1.jpg);
+    background-position: left bottom;
     padding: .5rem $gutter;
-    color: white;
 }
 
 
 
-
 header h1 {
-    color: $primaryColor;
+    color: black;
     font-weight: $heavyWeight;
     font-size: 2.8rem;
-    margin: 20px 0px 0px 0px;
+    margin: 45px 0px 0px 0px;
 }
 
 
@@ -36,56 +35,59 @@ header h2 {
     font-size: 1.4rem;
     margin: 0;
     display: none;
-    color: lighten($primaryColor, 10%);
+    color: black;
     display: block;
       
 }
 
 /* navigation */
 
+nav button {
+    margin: .2rem $gutter;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: $primaryColor;
+}
 
 nav {
-    background-color: $primaryColor;
-    margin-bottom: 0px;   
+    background-color: lighten($subColor, 10%);
+
 }
 
 nav ul {
-    margin: 0px; padding: 0px;
-}
-
-nav li {
-    float: left;
-    width: 25%;
     list-style-type: none;
-    text-align: center;
-    background-color: lighten($primaryColor, 20%);
-    border-left: 2px solid $primaryColor;
-    
+    padding: 0;
+    margin: 0;
 }
 
-nav li.active { 
-    background-color: lighten($primaryColor, 40%);
-    
-}
-
-nav a {
-    font-size: 1rem;
+nav ul li a{
     display: block;
-    padding: .8rem 0;
-    color: white;
-    text-align: center;
+    padding: .8rem $gutter;
     text-decoration: none;
+    color: white;
+    background-color: lighten($subColor, 20%);
+    border-top: 1px solid rgba(0,0,0,0.3);
+
 }
 
-nav a.active {
+nav ul li.active a { 
     font-weight: $heavyWeight;
-    color: darken($primaryColor, 25%);
+    color: white;
+    background-color: lighten($subColor, 40%)
+    
 }
 
-nav a:hover {
+nav ul li a:hover {
     background-color: darken($subColor, 10%);
-
+    color: white;
 }
+
+nav ul.hide {
+    display: none;
+}
+
+
 
 /* main */
 main {

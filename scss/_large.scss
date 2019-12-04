@@ -1,19 +1,16 @@
 
 header, nav, main, footer {
-    max-width: 75rem;
+    max-width: 64rem;
     margin: auto;
 }
 
-nav ul {
-    padding-left: $gutter;
+header {
+    background-image: url(../images/header3.jpg);
+    background-position: left bottom;
 }
 
-nav li {
-    width: auto;
-}
-
-nav a {
-    padding: .5rem 1rem; 
+nav ul li a {
+    padding: .6rem 1rem;
 }
 
 
