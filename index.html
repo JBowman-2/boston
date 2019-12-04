@@ -10,6 +10,10 @@
 
     <link href="css/styles.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+				
 </head>
 <body>
     
@@ -33,13 +37,49 @@
    
 
     <main class="clearfix">
-        <picture class="heroPhoto">
-       
-                <img src="images/hero1200.jpg" alt="space">
         
+    <div class="slickHero">
+        <picture>
+	        <source srcset="images/mhero1.jpg" media="(max-width: 600px)">
+	        <source srcset="images/hero1.jpg" media="(min-width: 600px)">
+	        <img src="images/hero1.jpg" alt="slider">
+	        <div>Crazy fun amusement for all ages</div>
         </picture>
+
+        <picture>
+            <source srcset="images/mhero2.jpg" media="(max-width: 600px)">
+            <source srcset="images/hero2.jpg" media="(min-width: 600px)">
+            <img src="images/hero2.jpg" alt="slider">
+            <div>You can never go wrong with a night out with the family</div>
+        </picture>
+
+        <picture>
+            <source srcset="images/mhero3.jpg" media="(max-width: 600px)">
+            <source srcset="images/hero3.jpg" media="(min-width: 600px)">
+            <img src="images/hero3.jpg" alt="slider">
+            <div>Walls of glass every direction you look</div>
+        </picture>
+
+        <picture>
+                <source srcset="images/mhero4.jpg" media="(max-width: 600px)">
+                <source srcset="images/hero4.jpg" media="(min-width: 600px)">
+                <img src="images/hero4.jpg" alt="slider">
+                <div>Sky scrapping buildings ar as the eye can see</div>
+        </picture>
+
+        <picture>
+                <source srcset="images/mhero5.jpg" media="(max-width: 600px)">
+                <source srcset="images/hero5.jpg" media="(min-width: 600px)">
+                <img src="images/hero5.jpg" alt="slider">
+                <div>Spend soem time relaxing on by the water</div>
+        </picture>
+
+    </div>
+
+
       
-        <h2>Our Founder</h2>
+        
+           
 
     
         
@@ -56,7 +96,23 @@
             document.getElementById("priNav").classList.toggle("hide");
         }
     </script>
-    
-    
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+   
+    <script>
+    $(document).ready(function(){
+        $('.slickHero').slick({
+            dots: true,
+            arrows: false
+        });
+      });
+    </script>
+		
 </body>
 </html>
