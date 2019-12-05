@@ -347,7 +347,7 @@ nav button {
   color: #966c3a; }
 
 nav {
-  background: linear-gradient(to top, #FAE5C1 25%, #2257b4 115%); }
+  background: #2257b4; }
 
 nav ul {
   list-style-type: none;
@@ -468,6 +468,9 @@ footer {
     background-image: url(../images/header2.jpg);
     background-position: left bottom;
     padding: 0.5rem 2%; }
+
+  nav {
+    background: linear-gradient(to top, #FAE5C1 25%, #2257b4 115%); }
 
   nav button {
     display: none; }
