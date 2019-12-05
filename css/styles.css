@@ -344,10 +344,10 @@ nav button {
   background-color: transparent;
   border: none;
   font-size: 1.6rem;
-  color: #6416BA; }
+  color: #966c3a; }
 
 nav {
-  background-color: #ff3333; }
+  background-color: #2257b4; }
 
 nav ul {
   list-style-type: none;
@@ -359,16 +359,16 @@ nav ul li a {
   padding: 0.8rem 2%;
   text-decoration: none;
   color: white;
-  background-color: #ff6666;
+  background-color: #316dd8;
   border-top: 1px solid rgba(0, 0, 0, 0.3); }
 
 nav ul li.active a {
   font-weight: 700;
   color: white;
-  background-color: #ffcccc; }
+  background-color: #87aae8; }
 
 nav ul li a:hover {
-  background-color: #cc0000;
+  background-color: #122d5e;
   color: white; }
 
 nav ul.hide {
@@ -388,13 +388,12 @@ picture div {
   color: white;
   width: 100%;
   padding: 1rem;
-  font-size: 2rem; }
+  font-size: 1rem; }
 
 /* cards */
 div.cards {
   display: flex;
   flex-wrap: wrap;
-  border: blue 2px solid;
   margin: 2%; }
 
 div.cards div:nth-child(1) {
@@ -410,32 +409,34 @@ div.cards div:nth-child(4) {
   background-image: url("../images/card4.jpg"); }
 
 div.cards div {
-  border: red 2px solid;
   width: 100%; }
 
 div.cards div a {
   display: block;
   width: 100%;
-  height: 600px;
+  height: 250px;
   text-decoration: none;
   padding: 0 2%;
   transition: all .5s ease-in; }
 
 div.cards div:nth-child(1) a {
-  background-color: #1aff1a; }
+  background-color: #d5b794; }
 
 div.cards div:nth-child(2) a {
-  background-color: #ff9999; }
+  background-color: #d5b794; }
 
 div.cards div:nth-child(3) a {
-  background-color: #ff9999; }
+  background-color: #d5b794; }
 
 div.cards div:nth-child(4) a {
-  background-color: #1aff1a; }
+  background-color: #d5b794; }
 
 div.cards div a:hover {
   background: none;
   text-shadow: 0 0 4px black; }
+
+div.cards div img {
+  margin: 10% 40% 0 40%; }
 
 div.cards div h3 {
   text-align: center;
@@ -444,8 +445,9 @@ div.cards div h3 {
   margin: 10px; }
 
 main h2 {
-  color: #6416BA;
-  margin: 15px 0 5px 2%; }
+  color: #1a4289;
+  margin: 15px 0 5px 2%;
+  font-size: 2rem; }
 
 main p {
   margin-left: 2%; }
@@ -456,10 +458,10 @@ main p {
   clear: both; }
 
 footer {
-  background-color: red;
+  background-color: #1a4289;
   text-align: center;
   padding: 1rem 2%;
-  color: #6416BA; }
+  color: white; }
 
 @media only screen and (min-width: 600px) {
   header {
@@ -484,8 +486,14 @@ footer {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: .8rem 1rem; }
 
+  picture div {
+    font-size: 1.5rem; }
+
   div.cards div {
-    flex-basis: 50%; } }
+    flex-basis: 50%; }
+
+  div.cards div img {
+    margin: 20% 37% 0 37%; } }
 @media only screen and (min-width: 850px) {
   header, nav, main, footer {
     max-width: 64rem;
@@ -499,4 +507,7 @@ footer {
     padding: .6rem 1rem; }
 
   div.cards div {
-    flex-basis: 25%; } }
+    flex-basis: 25%; }
+
+  div.cards div img {
+    margin: 20% 29% 0 29%; } }
