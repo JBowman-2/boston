@@ -347,7 +347,7 @@ nav button {
   color: #966c3a; }
 
 nav {
-  background-color: #2257b4; }
+  background: linear-gradient(to top, #FAE5C1 25%, #2257b4 115%); }
 
 nav ul {
   list-style-type: none;

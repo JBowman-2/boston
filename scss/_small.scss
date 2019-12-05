@@ -51,7 +51,8 @@ nav button {
 }
 
 nav {
-    background-color: lighten($subColor, 10%);
+
+    background: linear-gradient(to top, #FAE5C1 25%, lighten($subColor, 10%) 115%);
 
 }
 
