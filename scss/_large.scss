@@ -14,10 +14,7 @@ nav ul li a {
 }
 
 
-@for $i from 1 through 12 {
-    $w:(($i / 12) * 100%);
-    .large-#{$i} {flex-basis: $w;}	
-} 
-
-
+div.cards div {
+    flex-basis: 25%;
+    }
 

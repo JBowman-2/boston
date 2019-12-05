@@ -347,7 +347,7 @@ nav button {
   color: #6416BA; }
 
 nav {
-  background-color: #0410b8; }
+  background-color: #ff3333; }
 
 nav ul {
   list-style-type: none;
@@ -359,16 +359,16 @@ nav ul li a {
   padding: 0.8rem 2%;
   text-decoration: none;
   color: white;
-  background-color: #0515ea;
+  background-color: #ff6666;
   border-top: 1px solid rgba(0, 0, 0, 0.3); }
 
 nav ul li.active a {
   font-weight: 700;
   color: white;
-  background-color: #5a65fb; }
+  background-color: #ffcccc; }
 
 nav ul li a:hover {
-  background-color: #020854;
+  background-color: #cc0000;
   color: white; }
 
 nav ul.hide {
@@ -391,6 +391,12 @@ picture div {
   font-size: 2rem; }
 
 /* cards */
+div.cards {
+  display: flex;
+  flex-wrap: wrap;
+  border: blue 2px solid;
+  margin: 2%; }
+
 div.cards div:nth-child(1) {
   background-image: url("../images/card1.jpg"); }
 
@@ -403,6 +409,10 @@ div.cards div:nth-child(3) {
 div.cards div:nth-child(4) {
   background-image: url("../images/card4.jpg"); }
 
+div.cards div {
+  border: red 2px solid;
+  width: 100%; }
+
 div.cards div a {
   display: block;
   width: 100%;
@@ -412,28 +422,25 @@ div.cards div a {
   transition: all .5s ease-in; }
 
 div.cards div:nth-child(1) a {
-  background-color: #2836fa; }
+  background-color: #1aff1a; }
 
 div.cards div:nth-child(2) a {
-  background-color: #2836fa; }
+  background-color: #ff9999; }
 
 div.cards div:nth-child(3) a {
-  background-color: #2836fa; }
+  background-color: #ff9999; }
 
 div.cards div:nth-child(4) a {
-  background-color: #2836fa; }
+  background-color: #1aff1a; }
 
 div.cards div a:hover {
   background: none;
   text-shadow: 0 0 4px black; }
 
-div.cards div a img {
-  padding: 20% 30% 0 30%; }
-
-div.cards div a h3 {
+div.cards div h3 {
   text-align: center;
   color: white;
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 10px; }
 
 main h2 {
@@ -449,46 +456,10 @@ main p {
   clear: both; }
 
 footer {
-  background-color: #030c86;
+  background-color: red;
   text-align: center;
   padding: 1rem 2%;
   color: #6416BA; }
-
-.small-1 {
-  flex-basis: 8.3333333333%; }
-
-.small-2 {
-  flex-basis: 16.6666666667%; }
-
-.small-3 {
-  flex-basis: 25%; }
-
-.small-4 {
-  flex-basis: 33.3333333333%; }
-
-.small-5 {
-  flex-basis: 41.6666666667%; }
-
-.small-6 {
-  flex-basis: 50%; }
-
-.small-7 {
-  flex-basis: 58.3333333333%; }
-
-.small-8 {
-  flex-basis: 66.6666666667%; }
-
-.small-9 {
-  flex-basis: 75%; }
-
-.small-10 {
-  flex-basis: 83.3333333333%; }
-
-.small-11 {
-  flex-basis: 91.6666666667%; }
-
-.small-12 {
-  flex-basis: 100%; }
 
 @media only screen and (min-width: 600px) {
   header {
@@ -513,41 +484,8 @@ footer {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: .8rem 1rem; }
 
-  .medium-1 {
-    flex-basis: 8.3333333333%; }
-
-  .medium-2 {
-    flex-basis: 16.6666666667%; }
-
-  .medium-3 {
-    flex-basis: 25%; }
-
-  .medium-4 {
-    flex-basis: 33.3333333333%; }
-
-  .medium-5 {
-    flex-basis: 41.6666666667%; }
-
-  .medium-6 {
-    flex-basis: 50%; }
-
-  .medium-7 {
-    flex-basis: 58.3333333333%; }
-
-  .medium-8 {
-    flex-basis: 66.6666666667%; }
-
-  .medium-9 {
-    flex-basis: 75%; }
-
-  .medium-10 {
-    flex-basis: 83.3333333333%; }
-
-  .medium-11 {
-    flex-basis: 91.6666666667%; }
-
-  .medium-12 {
-    flex-basis: 100%; } }
+  div.cards div {
+    flex-basis: 50%; } }
 @media only screen and (min-width: 850px) {
   header, nav, main, footer {
     max-width: 64rem;
@@ -560,38 +498,5 @@ footer {
   nav ul li a {
     padding: .6rem 1rem; }
 
-  .large-1 {
-    flex-basis: 8.3333333333%; }
-
-  .large-2 {
-    flex-basis: 16.6666666667%; }
-
-  .large-3 {
-    flex-basis: 25%; }
-
-  .large-4 {
-    flex-basis: 33.3333333333%; }
-
-  .large-5 {
-    flex-basis: 41.6666666667%; }
-
-  .large-6 {
-    flex-basis: 50%; }
-
-  .large-7 {
-    flex-basis: 58.3333333333%; }
-
-  .large-8 {
-    flex-basis: 66.6666666667%; }
-
-  .large-9 {
-    flex-basis: 75%; }
-
-  .large-10 {
-    flex-basis: 83.3333333333%; }
-
-  .large-11 {
-    flex-basis: 91.6666666667%; }
-
-  .large-12 {
-    flex-basis: 100%; } }
+  div.cards div {
+    flex-basis: 25%; } }
